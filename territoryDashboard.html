@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Territory Dashboard">
+        <template if:true={data}>
+            <div class="slds-p-around_medium">
+                <p><strong>Total Territories:</strong> {data.totalTerritories}</p>
+                <p><strong>Total Assignments:</strong> {data.totalAssignments}</p>
+                <p><strong>Top Region:</strong> {data.topRegion}</p>
+            </div>
+        </template>
+        <template if:true={error}>
+            <p>Error: {error}</p>
+        </template>
+    </lightning-card>
+</template>
