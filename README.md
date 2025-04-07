@@ -15,3 +15,15 @@ Dynamic Territory Manager (DTM) is a customizable Salesforce-native solution for
 - 📊 Admin dashboard for Territory insights
 
 ---
+🔹 2. Custom Metadata Design
+🧩 Metadata: Territory_Rule__mdt
+Field API Name	Type	Description
+Profile__c	Text	Profile Name to match
+Role__c	Text	Role Name to match
+Region__c	Text	Region field on User to match
+Territory_API_Name__c	Text	API name of related Territory__c record
+🧩 Metadata: Territory_Definition__mdt
+Field API Name	Type	Description
+Name	Metadata Name	Used for reference by rule
+Region__c	Text	Optional: Region this territory covers
+Map_Color__c	Text	UI color for map view (hex or color name)
